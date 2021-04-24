@@ -1,0 +1,23 @@
+<ul>
+{{each items}}
+    <li class="grid">
+      <a href="">
+        <div class="pic">
+          <img class="p-img" src="{{$value.url}}" alt="" />
+        </div>
+        <div class="tip">
+          <div class="inn">
+            <div class="title">
+             {{$value.title}}
+            </div>
+            <div class="extra">
+              <span class="star iconfont">&#xe62b;</span>
+              <span class="score">4.8</span>
+              <span class="comment">（92833评价) 2334.69k人参加过</span>
+            </div>
+          </div>
+        </div>
+      </a>
+    </li>
+{{/each}}
+  </ul>

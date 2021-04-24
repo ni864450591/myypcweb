@@ -1,0 +1,3 @@
+<div class="menus" id="menus">
+    {{include'./items2.art'}}
+</div>

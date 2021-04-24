@@ -1,0 +1,4 @@
+<div class="v-menu-box" id="v-menu-box">
+    {{include './menu1.art'}}
+    {{include './menu2.art'}}
+</div>

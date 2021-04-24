@@ -1,0 +1,14 @@
+<ul>
+  {{each data}}
+  <li data-n="{{$value.key}}">
+    <div class="inn">
+      <div class="t">{{$value.title}}</div>
+      <div class="e">
+        {{each $value.subTitles}}
+        <em>{{$value}}</em>
+        {{/each}}
+      </div>
+    </div>
+  </li>
+  {{/each}}
+</ul>

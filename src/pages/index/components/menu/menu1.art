@@ -1,0 +1,4 @@
+ <nav class="v-menu" id="v-menu">
+   {{include './items1.art'}}
+</nav>
+  

@@ -1,0 +1,14 @@
+<div class="menu" data-n="{{type}}">
+    <div class="menu_inn">
+        <dl>
+            {{each items}}
+            <dt>{{$value.title}}</dt>
+            <dd>
+                {{each $value.cities}}
+                <a href="">{{$value.text}}</a>
+                {{/each}}
+            </dd>
+            {{/each}}
+        </dl>
+    </div>
+</div>

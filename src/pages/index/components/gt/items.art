@@ -1,0 +1,50 @@
+<ul>
+    <li class="big grid">
+      <a href="">
+        <div class="pic">
+          <img class="p-img" src="{{one.url}}" alt="" />
+        </div>
+        <div class="tip">
+          <div class="inn">
+            <p>{{one.title}}</p>
+            <p>含机票酒店</p>
+          </div>
+        </div>
+        <div class="mask"></div>
+        <div class="y">
+          <div class="c">跟团</div>
+          <div class="e">半自助游</div>
+        </div>
+      </a>
+    </li>
+    {{each items}}
+    <li class="grid">
+      <a href="">
+        <div class="pic">
+          <img class="p-img" src="{{$value.url}}" alt="" />
+        </div>
+        <div class="tip">
+          {{$value.title}}）
+        </div>
+      </a>
+    </li>
+    {{/each}}
+    <li class="more grid">
+      <a href="">
+        <div class="more_con">
+          查看更多<br />
+          {{more.title}}
+        </div>
+        <div class="arrow">
+          <b class="iconfont">&#xe602;</b>
+        </div>
+        <div class="tj">
+          <ul>
+          {{each more.items}}
+            <li>{{$value}}</li>
+         {{/each}}
+          </ul>
+        </div>
+      </a>
+    </li>
+  </ul>

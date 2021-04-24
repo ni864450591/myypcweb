@@ -1,0 +1,6 @@
+.gt .more {
+    background: -webkit-linear-gradient(top, #41D8E9, #3685EA) !important;
+  }
+  .gt .loading{
+    padding-top: 200px;
+  }

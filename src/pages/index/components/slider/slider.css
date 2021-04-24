@@ -1,0 +1,57 @@
+.banner {
+  width: 100%;
+  min-width: 1152px;
+  position: relative;
+  overflow: hidden;
+  
+}
+.banner .loading{
+  padding-top: 200px;
+  padding-bottom: 200px;
+}
+.slider,
+.slider-content,
+.slider-item,
+.slider-img {
+  width: 100%;
+  height: 100%;
+}
+.slider {
+  overflow: hidden;
+}
+.slider-item {
+  float: left;
+}
+/* 去掉img的白边 */
+.slider-img {
+  vertical-align: top;
+}
+.slider-animation {
+  transition-property: transform;
+  transition-duration: 0ms;
+}
+
+
+.banner .slider .circles {
+  position: absolute;
+  bottom: 10px;
+  left: 50%;
+  z-index: 9999;
+  width: 180px;
+  margin-left: -90px;
+}
+
+.banner .slider .circles li {
+  cursor: pointer;
+  float: left;
+  width: 16px;
+  height: 16px;
+  margin-right: 14px;
+  background-color: rgba(248, 248, 248, 0.794);
+  border-radius: 60px;
+  transition: all 0.3s ease 0s;
+}
+.banner .slider .circles li.cur {
+  background-color: #20bd9a;
+  width: 32px;
+}
